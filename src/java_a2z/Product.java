@@ -1,6 +1,5 @@
 package java_a2z;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Product {
