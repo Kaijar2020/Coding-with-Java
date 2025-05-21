@@ -25,3 +25,19 @@ public class Assignment4 {
         return result;
     }
 }
+//String Palindrome Problem --Soluation
+class StringPlaindrome{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your input -->> ");
+        String s = input.nextLine();
+        StringBuffer s1 = new StringBuffer(s);
+        String inv_s = s1.reverse().toString();
+        if (s.equals(inv_s)){
+            System.out.println("This String is palindrome.");
+        }
+        else {
+            System.out.println("This is not palindrome.");
+        }
+    }
+}

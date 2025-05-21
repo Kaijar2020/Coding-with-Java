@@ -144,3 +144,82 @@ class ArrayListDemo{
        System.out.println(number);
     }
 }
+//String Demo-practice string
+class StringDemo{
+    public static void main(String[] args) {
+        String s1 = "kaizar bhai";
+        String s2 = new String(" Akib bro");
+
+        System.out.println(s1);
+        System.out.println(s2);
+
+        //String length
+        System.out.println(s1.length());
+        //String Concatination
+        System.out.println(s1.concat(s2));
+        //WordUpperorLowercase
+        System.out.println(s1.toUpperCase());
+        System.out.println(s2.toLowerCase());
+
+        String s3 = " I am from Bangladesh.   ";
+        System.out.println(s3);
+        System.out.println(s3.trim());
+        System.out.println(s3.charAt(1));
+        System.out.println(s3.codePointAt(3));
+        System.out.println(s3.indexOf('m'));
+        System.out.println(s3.lastIndexOf('f'));
+        //replace character
+        System.out.println(s1.replace('k','y'));
+        //split space remover
+        String[] s4 =s2.split(" ");
+        for (String s:s4){
+            System.out.println(s);
+        }
+    }
+}
+//StringBuffer practice
+class StringBufferDemo{
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("kaijar");
+        System.out.println(sb);
+
+        sb.append(" Akib ");
+        sb.append(55);
+        System.out.println(sb);
+        System.out.println(sb.reverse());
+        System.out.println(sb.delete(10,12));
+        sb.setLength(5);
+        System.out.println(sb);
+    }
+}
+//String Builder
+class StringBuilderDemo{
+    public static void main(String[] args) {
+        StringBuilder sbd = new StringBuilder("Birmingham");
+        sbd.append(" City");
+        System.out.println(sbd);
+    }
+}
+//Wrapper class in Java
+class WrapperDemo{
+    public static void main(String[] args) {
+        //primitive-object->>autoboxing
+        int x = 10;
+        Integer y = Integer.valueOf(x);
+        System.out.println(y);
+
+        //object - primitive ->> unboxing
+        double d= new Double(10.25);
+        Double e = d;
+        System.out.println(e);
+
+        //Convert primitive to string
+        int i = 120;
+        String s = Integer.toString(i);
+        System.out.println(s);
+        //Convert string to primitive
+        String r = "12";
+        int q = Integer.parseInt(r);
+        System.out.println(q);
+    }
+}

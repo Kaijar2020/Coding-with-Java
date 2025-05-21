@@ -21,5 +21,8 @@ public class MathClass {
         System.out.println(Math.subtractExact(y,x));
         System.out.println(Math.incrementExact(y));
         System.out.println(Math.PI);
+        //Random number generate
+        int random = (int)(Math.random()*100)+1;
+        System.out.println(random);
     }
 }
