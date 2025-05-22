@@ -223,3 +223,20 @@ class WrapperDemo{
         System.out.println(q);
     }
 }
+//Recursive Method
+class Recursive{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number : ");
+        int x = input.nextInt();
+        System.out.println(fact(x));
+    }
+    static int fact(int n){
+        if (n==1){
+            return 1;
+        }
+        else {
+           return n*fact(n-1);
+        }
+    }
+}
