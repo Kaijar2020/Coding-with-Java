@@ -1,4 +1,4 @@
-package java_a2z;
+package codechef.problem;
 
 
 import java.util.*;
