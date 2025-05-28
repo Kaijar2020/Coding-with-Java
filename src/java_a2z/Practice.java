@@ -240,3 +240,19 @@ class Recursive{
         }
     }
 }
+//Try-catch-finally block exception handeling
+class Exceptionhandeling{
+    public static void main(String[] args) {
+        try{
+            int x= 10,y=0;
+            int res = x/y;
+            System.out.println("Result: "+res);
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+        finally {
+            System.out.println("The programe end here..!!");
+        }
+    }
+}
